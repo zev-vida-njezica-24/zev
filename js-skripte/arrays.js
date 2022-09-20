@@ -14,10 +14,10 @@ var novosti = [
 
 
 ]
-        
-        
+
+
 var obavijesti = [
-        
+
     {
         datum: new Date('2022-09-19').toLocaleDateString("de-DE"),
         naslov: "Banka - obavijest",
@@ -27,7 +27,7 @@ var obavijesti = [
         link2: "../obavesti/banka-obavijest.html",
         redniBroj: 4,
     },
-    
+
     {
         datum: new Date('2022-09-19').toLocaleDateString("de-DE"),
         naslov: "Organi upravljanja",
@@ -37,9 +37,18 @@ var obavijesti = [
         link2: "../razno/organi-upravljanja.html",
         redniBroj: 3,
     },
+    {
+        datum: new Date('2022-09-20').toLocaleDateString("de-DE"),
+        naslov: "Zakon o održavanju stambenih zgrada",
+        sadrzaj: "Tekst Zakona sastoji se od teksta Zakona o održavanju stambenih zgrada Sl. glasnik RS 16/02, i teksta Zakona o izmjenama i dopunama Zakona o održavanju stambenih zgrada Sl. glasnik RS 65/03",
+        kategorija: "obavijest",
+        link: "kategorije/razno/zakon-o-odrzavanju-stambenih-zgrada.html",
+        link2: "../razno/zakon-o-odrzavanju-stambenih-zgrada.html",
+        redniBroj: 6,
+    },
 
-    
-    
+
+
 ]
 
 var zapisnici = [
@@ -53,7 +62,7 @@ var zapisnici = [
         redniBroj: 5,
     },
 
-    
+
 ]
 
 
@@ -65,14 +74,14 @@ sveZajedno = [...novosti, ...obavijesti, ...zapisnici];
 
 function sortiranje(a, b) {
     return b.redniBroj - a.redniBroj;
-       
+
     }
 sveZajedno.sort(sortiranje)
 
 sveZajedno.forEach((item) => {
-    
+
         var pocetnaLista = document.getElementById('paginated-list');
-    
+
         let sablon = `
 
             <li class="text list-item lista-za-brojanje" data-category="zapisnik">
@@ -90,23 +99,10 @@ sveZajedno.forEach((item) => {
               <div class="nastavi">
                   <a href="${item.link}"><p>Nastavi čitati</p></a>
               </div>
-            
+
           </li>
 
-        ` 
+        `
         pocetnaLista.innerHTML += sablon;
-        
+
 })
-
-
-    
-
-
-
-
-
-
-
-
-
-
