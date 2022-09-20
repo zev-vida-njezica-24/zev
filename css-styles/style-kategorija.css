@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&family=Oxygen:wght@300;400;700&family=Raleway:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+:root {
+    --font1: 'Merriweather', sans-serif;
+    --font2: 'Lato', sans-serif;
+    --boja1: #333;
+    --boja2: #222;
+    --boja3: #767676;
+    --boja4: #f3f3f3;
+
+    --elColor1: #006a6a;
+    --elColor2: #fffcf6;
+    --elColor3: #338988;
+
+}
+
+
+
+
+
+
+
+
+.hero {
+    height: 30vh;
+}
+
+
+.naslovni-tekst {
+    padding: 8vh 0;
+    text-align: left;
+    
+}
+
+.naslov {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+
+
+
+/*=========================================*/
+/*--- obavesti ----------------------------*/
+
+
+.obavesti-naslov {
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+}
+
+.obavesti-tekst p {
+    padding-bottom: 1.5rem;
+}
+
+
+.lista-slovo li {
+    list-style-type: lower-latin;
+    padding-bottom: 15px;
+}
+
+ol {
+    padding-left: 40px;
+
+}
+
+.zakon-naslov2 {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 1.2rem;
+}
+.zakon-podnaslov {
+    font-size: 1rem;
+}
+.clan {
+    font-weight: 600;
+    padding-top: 20px;
+}
+.levi-box {
+    line-height: 1.5rem;
+    flex: 2;
+}
+.desni-box {
+    flex: 1;
+}
+.preuzmi2 {
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.preuzmi2 a {
+    color: #ff3a18;
+}
+.preuzmi1 {
+    padding: 10px 0;
+    font-size: 0.8rem;
+}
+.preuzmi1 a {
+    color: #ff3a18;
+}
+
+/*==============================================*/
+/*==============================================*/
+
+.dok-lista li {
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dok-lista button {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    width: 70%;
+    text-align: left;
+    padding: 10px;
+}
+
+.dok-lista button a {
+    text-decoration: none;
+    color: var(--elColor1);
+    
+}
+
+
+.dok-lista span {
+    color: red;
+    float: right;
+    letter-spacing: 2px;
+}
+
+
+
+.nasl {
+    font-size: 0.7rem;
+}
+.k-o{
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 500px) {
+
+    .main-box {
+        padding: 5px;
+    }
+    .doks {
+        width: 100%;
+    }
+    .dok-lista button {
+        width: 100%;
+    }
+    .obavesti-naslov {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
